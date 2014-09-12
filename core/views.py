@@ -8,6 +8,6 @@ def index():
     return render_template('index.html', arts=get_arts())
 
 
-@app.route('/<id>')
+@app.route('/<id>.html')
 def art(id):
     return render_template('art.html', art=Art.load(id))
