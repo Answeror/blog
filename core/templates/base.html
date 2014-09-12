@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content='IE=edge'>
+    <meta name=viewport content='width=device-width, initial-scale=1'>
+    <title>{% block title %}answeror@gmail.com{% endblock %}</title>
+    <link rel=stylesheet href='{{ url_for("static", filename="bootstrap/css/bootstrap.min.css") }}'>
+    <link rel=stylesheet href='{{ url_for("static", filename="style.css") }}'>
+</head>
+<body class=blog>
+    <div class=container>
+        <div class=row>
+            <div class='col-md-8 col-md-offset-2'>
+                <ul class='nav nav-pills'>
+                    <li><a href='{{ url_for("index") }}' title='home'>home</a></li>
+                    <li><a href='{{ url_for("art", id="about") }}' title='about'>about</a></li>
+                </ul>
+                <article class=art>
+                    {% block art %}{% endblock %}
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src='{{ url_for("static", filename="bootstrap/js/bootstrap.min.js") }}'></script>
+</body>
+</html>

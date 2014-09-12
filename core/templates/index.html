@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block art -%}
+<ul>
+{% for art in arts -%}
+<li><a href='{{ url_for("art", id=art.id) }}' title={{ art.title }}>{{ art.title }}</a></li>
+{%- endfor %}
+</ul>
+{%- endblock %}

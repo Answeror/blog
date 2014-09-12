@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block art -%}
+<section class=head>
+    <h1 class=title>{{ art.title }}</h1>
+    {% set date = art.ctime.strftime('%Y-%m-%d') %}
+    <h2><time class=ctime datetime='{{ date }}'>{{ date }}</time></h2>
+</section>
+<section class=body>
+{{ art.body|safe }}
+</section>
+{%- endblock %}
