@@ -4,7 +4,7 @@
     <meta charset=UTF-8>
     <meta http-equiv=X-UA-Compatible content='IE=edge'>
     <meta name=viewport content='width=device-width, initial-scale=1'>
-    <title>{% block title %}answeror@gmail.com{% endblock %}</title>
+    <title>{% block title %}answeror{% endblock %}</title>
     <link rel=stylesheet href='{{ url_for("static", filename="bootstrap/css/bootstrap.min.css") }}'>
     <link rel=stylesheet href='{{ url_for("static", filename="style.css") }}'>
 </head>
@@ -13,8 +13,7 @@
         <div class=row>
             <div class='col-md-8 col-md-offset-2'>
                 <ul class='nav nav-pills'>
-                    <li><a href='{{ url_for("index") }}' title='home'>home</a></li>
-                    <li><a href='{{ url_for("art", id="about") }}' title='about'>about</a></li>
+                    <li><a class='text-muted' href='{{ url_for("index") }}' title='home'>home</a></li>
                 </ul>
                 <article class=art>
                     {% block art %}{% endblock %}

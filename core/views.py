@@ -1,11 +1,11 @@
 from flask import render_template
-from .art import get_arts, Art
+from .art import Art
 from . import app
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', arts=get_arts())
+    return art('index')
 
 
 @app.route('/<id>.html')

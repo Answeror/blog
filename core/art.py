@@ -94,6 +94,9 @@ class Art(object):
         ]
         return markdown.markdown(render_template_string(self.raw), extensions)
 
+    def _render_jinja2(self):
+        return render_template_string(self.raw)
+
     @classmethod
     def load(cls, name):
         for ext, hint in [
@@ -110,3 +113,7 @@ class Art(object):
         with open(path, 'rb') as f:
             text = f.read().decode('utf-8')
         return cls(name, path, text, hint)
+
+    @property
+    def show_head(self):
+        return self.head.get('show_head', True)
