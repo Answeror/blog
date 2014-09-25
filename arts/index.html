@@ -1,0 +1,33 @@
+title: answeror
+date: 2014-09-25
+show_head: false
+type: jinja2
+
+<style>
+.h {
+	font-size: 20px;
+	text-transform: uppercase;
+    margin: 30px 0 20px 0;
+}
+</style>
+
+<pre>
+    contact: answeror [at] g[no spam please]mail [dot] com 
+careers 2.0: <a href='http://careers.stackoverflow.com/cv/employer/89415' target=_blank>employer/89415</a>
+     github: <a href='https://github.com/Answeror/' target=_blank>github.com/Answeror</a>
+</pre>
+
+<h1 class=h>projects</h1>
+
+<pre>
+       title: rss.moe / torabot
+project home: <a href='http://proj.rss.moe/' target=_blank>proj.rss.moe</a>
+        demo: <a href='http://rss.moe/' target=_blank>rss.moe</a>
+ description: An ACG notification service and yahoo pipes like framework.
+</pre>
+
+<h1 class=h>articles</h1>
+
+{% for art in [{'id': 'research-guide', 'title': '实验室新生手册'}] -%}
+<a href='{{ url_for("art", id=art.id) }}' title={{ art.title }}>{{ art.title }}</a>
+{%- endfor %}
