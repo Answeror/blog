@@ -172,17 +172,21 @@ table class='top wide'
 
 ### 开发环境搭建
 
-我一般安装32位的Python `2.7.x`和`3.3.x`, `x`表示子版本号, (截至2013-09-09)最新版本是`2.7.5`和`3.3.2`, 在[官方网站](http://www.python.org/)有下载. **强烈建议**使用[npackd](https://code.google.com/p/windows-package-manager/)安装Python.
+<del>我一般安装32位的Python `2.7.x`和`3.3.x`, `x`表示子版本号, (截至2013-09-09)最新版本是`2.7.5`和`3.3.2`, 在[官方网站](http://www.python.org/)有下载. **强烈建议**使用[npackd](https://code.google.com/p/windows-package-manager/)安装Python.</del>
 
-如果不需要大规模科学计算, 建议安装32位Python. 64位的需要了再装也不迟. 各版本和各地址空间(32/64)的Python可以共存.
+<del>如果不需要大规模科学计算, 建议安装32位Python. 64位的需要了再装也不迟. 各版本和各地址空间(32/64)的Python可以共存.</del>
 
-Python的开发环境(IDE)建议使用[IPython notebook](http://ipython.org/). 如果使用过Python一段时间, 建议使用virtualenv和pip安装ipython. 如果是新手, 建议参考[这里](http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/ex.0.ipynb)安装.
+<del>Python的开发环境(IDE)建议使用[IPython notebook](http://ipython.org/). 如果使用过Python一段时间, 建议使用virtualenv和pip安装ipython. 如果是新手, 建议参考[这里](http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/ex.0.ipynb)安装.</del>
 
-上述教程中用到的所有安装包均可在[这里](http://www.lfd.uci.edu/~gohlke/pythonlibs/)下载. GOW可以在[这里](https://github.com/bmatzelle/gow/downloads)下载.
+<del>上述教程中用到的所有安装包均可在[这里](http://www.lfd.uci.edu/~gohlke/pythonlibs/)下载. GOW可以在[这里](https://github.com/bmatzelle/gow/downloads)下载.</del>
 
-如果使用Python3, ipython的命令行对应为ipython3, 而不是ipython. 如果嫌每次输入ipython/python的绝对路径麻烦, 可以参考[这里](http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/devenv.ipynb)设置系统PATH环境变量.
+<del>如果使用Python3, ipython的命令行对应为ipython3, 而不是ipython. 如果嫌每次输入ipython/python的绝对路径麻烦, 可以参考[这里](http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/devenv.ipynb)设置系统PATH环境变量.</del>
 
-上述链接里还包含了pip和virtualenv的安装和使用方法, 强烈建议用之.
+<del>上述链接里还包含了pip和virtualenv的安装和使用方法, 强烈建议用之.</del>
+
+请无视上面的废话. 直接安装[Anaconda Python](http://continuum.io/downloads)即可. 你可以先安装Python2的Anaconda, 然后参考[这里](http://continuum.io/blog/anaconda-python-3)安装Python3环境. Anaconda的各个Python环境是相互隔离的, 相当于virtualenv. 其包管理机制类似于pip, 不同点是Anaconda从二进制安装.
+
+IDE建议使用[PyCharm](https://www.jetbrains.com/pycharm/). 如果你熟悉Vim, 请无视这段话.
 
 ## OpenCV
 
