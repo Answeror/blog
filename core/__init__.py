@@ -18,7 +18,7 @@ import os
 import subprocess as sp
 CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
 sp.check_call([
-    'lessc',
+    'lesscpy',
     os.path.join(CURRENT_PATH, 'static', 'style.less'),
     os.path.join(CURRENT_PATH, 'static', 'style.css')
 ])
